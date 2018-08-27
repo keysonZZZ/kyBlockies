@@ -1,7 +1,7 @@
 # kyBlockies
 
 ### install 
-- `go get github.com/keysonzzz/kyBlockies`
+- `go get -u -v github.com/keysonzzz/kyBlockies`
 
 ### Usage
 
