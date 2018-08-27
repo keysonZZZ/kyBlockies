@@ -1,6 +1,8 @@
 # kyBlockies
 
-### install 
+> Generate eth address identicons written by golang.
+
+### Install 
 - `go get -u -v github.com/keysonzzz/kyBlockies`
 
 ### Usage
