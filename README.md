@@ -12,7 +12,7 @@
 kyBlockies.CreateIconBytes(TARGET_ADDRESS)
 
 // generate image and save to path
-kyBlockies.CreateIconBytes(TARGET_ADDRESS, TARGET_PATH)
+kyBlockies.CreateIconPng(TARGET_ADDRESS, TARGET_PATH)
 
 ```
 

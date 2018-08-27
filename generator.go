@@ -18,7 +18,7 @@ var randSeed = [4]int64{}
  */
 func CreateIconBytes(address string) []byte {
 	options := NewBuildOption(address)
-	data := CreateImageData(options.size)
+	data := createImageData(options.size)
 	return createImage(data, options.color, options.bgColor, options.spotColor, 16)
 }
 
@@ -31,9 +31,9 @@ func CreateIconBytes(address string) []byte {
 //========================================================================
 //
 //========================================================================
-func CreateIconPng(path string, address string) {
+func CreateIconPng(address string, path string) {
 	options := NewBuildOption(address)
-	data := CreateImageData(options.size)
+	data := createImageData(options.size)
 	createPngAndSaveToPath(path, data, options.color, options.bgColor, options.spotColor, 16)
 }
 
@@ -89,7 +89,7 @@ func seedRand(seed string) {
 	}
 }
 
-func CreateImageData(size int) []float64 {
+func createImageData(size int) []float64 {
 	width := size
 	height := size
 
